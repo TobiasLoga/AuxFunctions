@@ -1,0 +1,14 @@
+Package: AuxFunctions
+Type: Package
+Title: Auxiliary functions with focus on emulating Excel functions
+Version: 0.1.0
+Authors@R: 
+    person (given = "Tobias", family = "Loga", email = "t.loga@iwu.de", role = "aut", comment = c(ORCID = "0000-0001-5097-5613"))
+    person (given = "Guillaume", family = "Behem", email = "g.behem@iwu.de", role = "aut")
+    person (given = "Jens", family = "Calisti", email = "jens@tangled.de", role = "cre", comment = c(ORCID = "0000-0003-2211-0553"))
+Maintainer: Tobias Loga <t.loga@iwu.de>
+Description: The idea is to emulate the structure of the Excel function arguments in order to simplify parsing complex Excel algorithms to R script.
+License: CC BY 4.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2

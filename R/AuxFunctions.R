@@ -34,6 +34,33 @@ TimeStampForDataset <- function()  {
 }
 
 
+## xl_ConvertDate
+#' Convert Excel date from integer to date format
+#'
+#' xl_ConvertDate converts dates imported from Excel by openxlsx and thus only existing as integer to an R date format
+#'
+#' @param x a value or vector of integers
+#' @param origin a string representing the origin of the Excel date, default = "1900-01-01"
+#' @return a value or vector of R date format
+#' @examples
+#' xl_ConvertDate (c (35968, 35440))
+#' @export
+xl_ConvertDate <- function (x, origin = "1900-01-01", ...) {
+  # use as.integer to only get the integer part of a number.  in openxlsx dates are integers only.
+  x <- as.integer (x)
+  notNa <- !is.na (x)
+  earlyDate <- x < 60
+
+  if (origin == "1900-01-01") {
+    x[notNa] <- x[notNa] - 2
+    x[earlyDate & notNa] <- x[earlyDate & notNa] + 1
+  }
+  return (
+    as.Date(x, origin = origin, ...)
+  )
+}
+
+
 ## Replace_NA
 #' Replace NA (Excel equivalent IFERROR)
 #'

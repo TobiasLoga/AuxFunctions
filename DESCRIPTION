@@ -1,7 +1,7 @@
 Package: AuxFunctions
 Type: Package
 Title: Auxiliary functions with focus on emulating Excel functions
-Version: 0.1.0
+Version: 1.0.0
 Authors@R: 
     person (given = "Tobias", family = "Loga", email = "t.loga@iwu.de", role = "aut", comment = c(ORCID = "0000-0001-5097-5613"))
     person (given = "Guillaume", family = "Behem", email = "g.behem@iwu.de", role = "aut")

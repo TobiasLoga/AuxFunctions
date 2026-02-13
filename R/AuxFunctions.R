@@ -5,6 +5,8 @@
 # install.packages("pak")
 # pak::pak("r-wasm/rwasm")
 
+library(pak)
+
 # docker pull ghcr.io/r-wasm/webr:main
 
 

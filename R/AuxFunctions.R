@@ -2,21 +2,16 @@
 ## User-defined auxiliary functions -----------------------------------------------------------------
 #####################################################################################################X
 
+# install.packages("pak")
+# pak::pak("r-wasm/rwasm")
+
+# docker pull ghcr.io/r-wasm/webr:main
+
+
 # renv::init()
 # renv::status()
 # renv::snapshot()
 
-
-# Information from:
-# https://github.com/r-wasm/actions/tree/main/.github/workflows#release-file-system-image.yml
-# Builds a WebAssembly file image and adds the files to a GitHub release.
-#
-# This is typically used within R packages to build and release a WebAssembly R package library image of your package and its dependencies. Because the assets are tied to a release, they will never be overwritten are are stable over time.
-
-
-# usethis::use_github_action(
-#   url = "https://raw.githubusercontent.com/r-wasm/actions/v2/examples/release-file-system-image.yml"
-# )
 
 
 

@@ -9,6 +9,18 @@
     ]
   },
   "Packages": {
+    "pak": {
+      "Package": "pak",
+      "Version": "0.9.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "tools",
+        "utils"
+      ],
+      "Hash": "8a719168f71817795c1e4dcf3324d7a7"
+    },
     "renv": {
       "Package": "renv",
       "Version": "1.0.7",
